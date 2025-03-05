@@ -12,6 +12,14 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
+- serviceName: project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_18
+  packages:
+  - name: ShilpaGitProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.shilpagit.integrations:flow
   packages:
   - name: ShilpaGitProject
@@ -65,6 +73,8 @@ configurationVariables:
   : "10"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : Progress® DataDirect®
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionEnabled
+  : "false"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16.connectionSettings.password
   : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16.connectionSettings.driverType
@@ -81,6 +91,8 @@ configurationVariables:
   : NO_TRANSACTION
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_13.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.user
+  : sss
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_10.connectionSettings.dbType
@@ -119,12 +131,16 @@ configurationVariables:
   : "1521"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.autoCommitFalseExtGit.connectionSettings.portNumber
   : "1521"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.blockingTimeout
+  : "1000"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_8.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_11.connectionSettings.dbType
   : ORACLE
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_8.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
   : ORACLE
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16.connectionSettings.transactionType
@@ -135,6 +151,8 @@ configurationVariables:
   : "10"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionSettings.serverName
   : sdss
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_13.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_9.connectionManagerSettings.expireTimeout
@@ -195,6 +213,8 @@ configurationVariables:
   : ddd
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_9.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16.connectionSettings.keyStore
   : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_15.connectionSettings.user
@@ -231,6 +251,8 @@ configurationVariables:
   : JDBC_BVT
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.databaseName
   : ORCL
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.startupBackoffSecs
+  : "10"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_15.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
@@ -243,6 +265,8 @@ configurationVariables:
   : "1521"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_7.connectionSettings.keyStore
   : ""
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.portNumber
+  : "1521"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_13.connectionManagerSettings.maximumPoolSize
@@ -261,6 +285,8 @@ configurationVariables:
   : Progress® DataDirect®
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.driverType
+  : Progress® DataDirect®
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracleDB.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_14.connectionSettings.serverName
@@ -273,6 +299,8 @@ configurationVariables:
   : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_11.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
   : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_10.connectionManagerSettings.startupRetryCount
@@ -331,6 +359,8 @@ configurationVariables:
   : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracleDB.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionSettings.transactionType
@@ -355,6 +385,8 @@ configurationVariables:
   : "1"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_14.connectionSettings.user
   : xss
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.dbType
+  : ORACLE
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_10.connectionSettings.portNumber
   : "1521"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionSettings.databaseName
@@ -365,6 +397,8 @@ configurationVariables:
   : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_10.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.autoCommitFalseExtGit.connectionManagerSettings.heartBeatInterval
@@ -375,6 +409,8 @@ configurationVariables:
   : sd
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionSettings.password
   : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.trustStore
+  : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_16.connectionSettings.dbType
   : ORACLE
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.autoCommitFalseExtGit.connectionManagerSettings.poolIncrementSize
@@ -389,16 +425,18 @@ configurationVariables:
   : Progress® DataDirect®
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionManagerSettings.heartBeatInterval
   : "0"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.poolIncrementSize
+  : "1"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.driverType
   : Progress® DataDirect®
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracleDB.connectionSettings.transactionType
   : NO_TRANSACTION
-  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_11.connectionSettings.serverName
-  : sss
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_15.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_11.connectionSettings.serverName
+  : sss
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_11.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracleDB.connectionSettings.serverName
@@ -419,10 +457,10 @@ configurationVariables:
   : JDBC_BVT
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_13.connectionSettings.user
   : sss
-  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionSettings.networkProtocol
-  : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_8.connectionSettings.user
   : JDBC_BVT
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionSettings.networkProtocol
+  : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_15.connectionEnabled
   : "false"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionEnabled
@@ -441,6 +479,8 @@ configurationVariables:
   : "1000"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_8.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_15.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.rrrrrrrrrrrr.connectionSettings.password
@@ -515,14 +555,16 @@ configurationVariables:
   : "1"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_15.connectionSettings.dbType
   : ORACLE
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.networkProtocol
+  : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
   : LOCAL_TRANSACTION
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionManagerSettings.poolable
   : "false"
-  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_9.connectionManagerSettings.heartBeatInterval
-  : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_8.connectionSettings.databaseName
   : ORCL
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_9.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_13.connectionEnabled
   : "false"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionManagerSettings.poolIncrementSize
@@ -543,7 +585,11 @@ configurationVariables:
   : "false"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.serverName
+  : xs
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracleDB.connectionSettings.keyStore
+  : ""
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.databaseName
   : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_7.connectionSettings.dbType
   : ORACLE
@@ -709,10 +755,10 @@ configurationVariables:
   : "10"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_10.connectionSettings.serverName
   : sss
-  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_11.connectionManagerSettings.startupRetryCount
-  : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_17.connectionSettings.driverType
   : Progress® DataDirect®
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_11.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_7.connectionEnabled
   : "false"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_13.connectionManagerSettings.expireTimeout
@@ -741,6 +787,8 @@ configurationVariables:
   : "1"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracle.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionManagerSettings.minimumPoolSize
+  : "1"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_14.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_11.connectionSettings.user
@@ -751,6 +799,10 @@ configurationVariables:
   : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.oracleDB.connectionSettings.otherProperties
   : driverType=thin;
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.keyStore
+  : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_14.connectionManagerSettings.expireTimeout
@@ -779,6 +831,8 @@ configurationVariables:
   : "0"
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
   : JDBC_BVT
+  ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_18.connectionSettings.password
+  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_9.connectionSettings.trustStore
   : ""
   ? artConnection.ShilpaGitProject.project.shilpagit.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_4.connectionSettings.otherProperties
